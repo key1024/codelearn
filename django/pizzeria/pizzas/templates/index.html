@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<p>This is a simple practice web for a little pizza shop.</p>
+<p>Here are the pizzas we have:</p>
+<ul>
+        {% for pizza in pizzas %}
+            <li>
+                <a href="{% url 'pizzas:pizza' pizza.id %}">{{pizza}}
+            </li>
+        {% empty %}
+            <li>Sorry, we don't have any pizza.</li>
+        {% endfor %}
+</ul>
+
+{% endblock content %}

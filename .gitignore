@@ -1,2 +1,4 @@
 /django/learning_log/ll_env
+/django/pizzeria/pizza_env
 __pycache__
+.vscode
